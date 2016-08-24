@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Youtube Playlist Duration",
+  "description": "Adds the duration time in the Youtube Playlist description.",
+  "version": "1.0",
+  
+  "icons": { "48": "icon.png"},
+
+  "content_scripts": [ {
+      "matches": [ "*://*.youtube.com/*" ],
+      "js": [ "jquery.min.js", "playlist-duration.js" ],
+      "css": ["style.css"]
+    } ],
+
+  "permissions": [ "*://*.youtube.com/*" ]
+}
