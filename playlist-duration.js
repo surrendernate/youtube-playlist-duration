@@ -49,5 +49,4 @@ function PlayListDuration() {
     // Store final Time and insert into the appended list item;
     var Time = hh + "h:" + mm + "m:" + ss + "s";
     $('#duration').html("Duration <span>" + Time + "</span>");
-    console.log(Time);
 }
